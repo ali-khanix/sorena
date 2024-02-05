@@ -11,6 +11,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  direction: rtl;
+}
 body,
 button {
   font-family: $body-font;
@@ -58,7 +61,8 @@ img {
 }
 
 .container {
-  max-width: 1120px;
+  // max-width: 1120px;
+  // margin: 2rem 16rem;
 }
 
 .grid {

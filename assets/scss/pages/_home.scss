@@ -1,0 +1,23 @@
+/****** Header & Nav ******/
+.header {
+  box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.25);
+  border-radius: 10rem;
+  margin: 2rem 16rem;
+}
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+  padding: 0 2rem;
+}
+
+.nav__list {
+  gap: 4rem;
+  font-size: 1.8rem;
+}
+
+.nav__list .nav__link {
+  color: $color-primary;
+  font-weight: 500;
+}
