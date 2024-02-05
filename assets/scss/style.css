@@ -148,17 +148,49 @@ img {
   justify-content: space-between;
   align-items: center;
   height: 10rem;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .nav__list {
   gap: 4rem;
   font-size: 1.8rem;
+  align-items: center;
 }
 
 .nav__list .nav__link {
   color: #0a1128;
   font-weight: 500;
+}
+
+.button {
+  border: 1px solid #004fff;
+  padding: 1.6rem 3rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.nav__link {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__link.button {
+  color: #004fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav__link.button:hover {
+  background-color: #004fff;
+  color: white;
+}
+
+.catalog-icon:hover {
+  color: white;
+}
+
+.d-none {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

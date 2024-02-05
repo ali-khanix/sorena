@@ -9,15 +9,48 @@
   justify-content: space-between;
   align-items: center;
   height: 10rem;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .nav__list {
   gap: 4rem;
   font-size: 1.8rem;
+  align-items: center;
 }
 
 .nav__list .nav__link {
   color: $color-primary;
   font-weight: 500;
+}
+
+.button {
+  border: 1px solid $color-button;
+
+  padding: 1.6rem 3rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.nav__link {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__link.button {
+  color: $color-button;
+  font-weight: $font-medium;
+  transition: 0.3s;
+}
+
+.nav__link.button:hover {
+  background-color: $color-button;
+  color: white;
+}
+
+.catalog-icon:hover {
+  color: white;
+}
+
+.d-none {
+  display: none;
 }
