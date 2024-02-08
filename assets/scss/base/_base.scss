@@ -14,36 +14,15 @@ html {
 body {
   direction: rtl;
 }
+
 body,
 button {
-  font-family: $body-font;
+  font-family: var(--body-font);
 }
 
 button {
   border: none;
   outline: none;
-}
-
-.heading-primary {
-  font-size: $heading-1;
-}
-
-.heading-primary.cairo {
-  font-family: $second-font;
-}
-
-.heading-secondary {
-  font-size: $heading-2;
-  line-height: $heading-2-line-height;
-}
-
-.sub-heading {
-  font-size: $sub-heading;
-}
-
-.description {
-  font-size: $description;
-  font-weight: $description-line-height;
 }
 
 ul {
@@ -60,9 +39,29 @@ img {
   height: auto;
 }
 
+/*=============== REUSABLE CSS CLASSES ===============*/
+.heading-primary {
+  font-size: var(--heading-1);
+  font-family: var(--second-font);
+}
+
+.heading-secondary {
+  font-size: var(--heading-2);
+  line-height: var(--heading-2-line-height);
+}
+
+.sub-heading {
+  font-size: var(--sub-heading);
+}
+
+.description {
+  font-size: var(--description);
+  font-weight: var(--description-line-height);
+}
+
 .container {
-  // max-width: 1120px;
-  // margin: 2rem 16rem;
+  max-width: 1120px;
+  margin-inline: 3rem;
 }
 
 .grid {
@@ -72,4 +71,13 @@ img {
 
 .flex {
   display: flex;
+}
+
+.button {
+  padding: 1.6rem 3rem;
+  background-color: var(--color-button);
+  color: var(--gray-200);
+  border-radius: 8px;
+  font-weight: var(--font-semi-bold);
+  font-size: 1.6rem;
 }

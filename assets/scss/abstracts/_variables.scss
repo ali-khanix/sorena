@@ -1,42 +1,64 @@
-// FONTS FAMILY
-$body-font: "iran yekan";
-$second-font: "cairo";
+:root {
+  --header-height: 3.5rem;
+  /*========== Colors ==========*/
+  /*Color mode HEX(Hexadecimal)*/
 
-// Font Sizes
-$heading-1: 6.4rem;
-$heading-1-sub: 3.6rem;
-$sub-heading: 2rem;
-$heading-2: 4.8rem;
-$description: 1.6rem;
+  // FONTS FAMILY
+  --body-font: "iran yekan";
+  --second-font: "cairo";
 
-// Font Weight
-$font-regular: 400;
-$font-medium: 500;
-$font-semi-bold: 600;
-$font-bold: 700;
+  // Colors-Grays
+  --gray-950: #030712;
+  --gray-900: #111827;
+  --gray-800: #1f2937;
+  --gray-700: #374151;
+  --gray-600: #4b5563;
+  --gray-500: #6b7280;
+  --gray-400: #9ca3af;
+  --gray-300: #d1d5db;
+  --gray-200: #e5e7eb;
+  --gray-100: #f3f4f6;
+  --gray-50: #f9fafb;
 
-// Z-Index
-$fixed: 100;
+  // Colors-primary
+  --color-primary: #0a1128;
+  --color-primary-alt: #23293e;
+  --color-primary-alter: #3b4153;
+  --color-button: #004fff;
+  --color-button-hover: #4d84ff;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 5px | 1rem = 10px ...*/
+  --heading-1: 6.4rem;
+  --heading-1-sub: 3.4rem;
+  --sub-heading: 1.6rem;
+  --heading-2: 3rem;
+  --description: 1.4rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  /*========== Line ==========*/
+  --heading-2-line-height: 6rem;
+  --description-line-height: 2.8rem;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1152px) {
+  :root {
+    --heading-1: 6.4rem;
+    --heading-1-sub: 3.6rem;
+    --sub-heading: 2rem;
+    --heading-2: 4.8rem;
+    --description: 1.6rem;
+  }
+}
 
 // Line Heights
-$heading-2-line-height: 6rem;
-$description-line-height: 2.8rem;
-
-// Colors-Grays
-$gray-950: #030712;
-$gray-900: #111827;
-$gray-800: #1f2937;
-$gray-700: #374151;
-$gray-600: #4b5563;
-$gray-500: #6b7280;
-$gray-400: #9ca3af;
-$gray-300: #d1d5db;
-$gray-200: #e5e7eb;
-$gray-100: #f3f4f6;
-$gray-50: #f9fafb;
-
-// Colors-primary
-$color-primary: #0a1128;
-$color-primary-alt: #23293e;
-$color-primary-alter: #3b4153;
-$color-button: #004fff;

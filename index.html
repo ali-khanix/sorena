@@ -5,78 +5,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>سورنا مهر البرز - بیلبوردِ تبلیغاتی</title>
 
+    <!--=============== FAVICON ===============-->
     <link
       rel="shortcut icon"
       href="assets/images/logo/سورنا لوگو_فو آیکون.svg"
       type="image/x-icon"
     />
 
-    <!-- REMIXICON -->
+    <!--=============== REMIXICON ===============-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
     />
 
-    <!-- CSS -->
+    <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/scss/style.css" />
   </head>
   <body>
-    <header class="header container" id="header">
-      <nav class="nav flex">
-        <a href="#" class="nav__logo">
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <!--=============== NAVIGATION ===============-->
+      <nav class="nav">
+        <div class="nav__toggle" id="nav-toggle">
           <img
+            src="assets/images/icons/menu icon/menu line horizontal.svg"
+            alt=""
+          />
+        </div>
+
+        <a href="https://sorenairan.com" target="_blank" class="nav__logo">
+          <img
+            class="nav__logo-img"
             src="assets/images/logo/لوگو سورنا با حروفِ فارسی.svg"
-            alt="لوگو سایتِ سورنا"
+            alt=""
           />
         </a>
 
         <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list flex">
+          <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" id="home" class="nav__link">خانه</a>
+              <a href="#" class="nav__link">خانه</a>
             </li>
 
             <li class="nav__item">
-              <a href="#" id="home" class="nav__link">خدمات</a>
+              <a href="#" class="nav__link">خدمات</a>
             </li>
 
             <li class="nav__item">
-              <a href="#" id="home" class="nav__link">بیلبوردها</a>
+              <a href="#" class="nav__link">بیلبوردها</a>
             </li>
 
             <li class="nav__item">
-              <a href="#" id="home" class="nav__link">بلاگ</a>
+              <a href="#" class="nav__link">تماس با ما</a>
             </li>
 
             <li class="nav__item">
-              <a href="#" id="home" class="nav__link">درباره</a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#" id="home" class="nav__link">تماس با ما</a>
-            </li>
-
-            <li class="nav__item catalog-btn">
-              <a
-                href="assets/pdf/Screenshot 2024-02-05 185753 1.pdf"
-                target="_blank"
-                onmouseover="setNewIcon()"
-                onmouseout="setOldIcon()"
-                class="nav__link button"
-              >
-                <span>کاتالوگ</span>
-                <img
-                  id="icon1"
-                  src="assets/images/icons/catalogue button/icon1.svg"
-                  alt="آیکونِ کاتالوگ"
-                />
-              </a>
+              <a href="#" class="nav__link">درباره ما</a>
             </li>
           </ul>
+
+          <!-- Close Button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__cta">
+          <a
+            href="assets/pdf/Screenshot 2024-02-05 185753 1.pdf"
+            target="_blank"
+            class="cta"
+          >
+            <img
+              class="nav__cta-svg"
+              src="assets/images/icons/catalogue button/icon1.svg"
+              alt=""
+            />
+          </a>
         </div>
       </nav>
     </header>
 
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HERO ===============-->
+      <section class="section-hero">
+        <div class="hero">
+          <picture class="hero__image-container">
+            <source
+              srcset="assets/images/hero/hero1.webp"
+              media="(max-width: 430px)"
+            />
+            <source
+              srcset="assets/images/hero/hero2.webp"
+              media="(max-width: 744px)"
+            />
+            <source
+              srcset="assets/images/hero/hero3.webp"
+              media="(max-width: 1150px)"
+            />
+            <source srcset="assets/images/hero/hero2.webp" />
+
+            <img
+              src="assets/images/hero/hero1.webp"
+              alt="mobile"
+              style="width: 100%"
+            />
+          </picture>
+
+          <div class="hero__content">
+            <h1 class="heading-primary">
+              خانه بیلبورد
+              <br />
+              <span class="heading-primary">برای معرفیِ برندِ شما</span>
+            </h1>
+
+            <p class="sub-heading">
+              ما به شما کمک میکنیم تا مکان های مناسب برای نصب بیلبوردهایتان
+              انتخاب کنید. تا بتوانید گذرندگان بیشتری را تحتِ تاثیر و جذبِ کسب و
+              کارِ خود کنید.
+            </p>
+
+            <div class="hero__cta-container">
+              <a href="tel:+989126463968" class="button"
+                >حالا تماس بگیرید
+                <img
+                  style="display: inline"
+                  src="assets/images/icons/calling phone icon.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== SELECT ===============-->
+      <section class="section-select">
+        <form class="select">
+          <label class="select__title">انتخاب استان</label>
+          <select class="select__select-box">
+            <option value="ghazvin">قزوین</option>
+            <option value="tehran">تهران</option>
+            <option value="alborz">البرز</option>
+            <option value="ghom">قم</option>
+          </select>
+
+          <label class="select__subtitle"
+            >استانِ موردِ نظرتون رو انتخاب کنید</label
+          >
+        </form>
+
+        <form class="select">
+          <label class="select__title">انتخابِ شهر</label>
+          <select class="select__select-box">
+            <option value="tehran">آبیک</option>
+            <option value="tehran">کرج</option>
+          </select>
+
+          <label class="select__subtitle"
+            >شهرِ موردِ نظرتون رو انتخاب کنید</label
+          >
+        </form>
+
+        <form class="select">
+          <label class="select__title">انتخابِ رسانه</label>
+          <select class="select__select-box">
+            <option value="tehran">بیلبورد</option>
+            <option value="alborz">عرشه پل</option>
+          </select>
+
+          <label class="select__subtitle"
+            >رسانه موردِ نظرتون رو انتخاب کنید</label
+          >
+        </form>
+
+        <a target="_blank" class="select_search-button">
+          جستجو <i class="ri-search-line"></i>
+        </a>
+      </section>
+    </main>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MAIN SCRIPT ===============-->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
