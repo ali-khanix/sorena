@@ -39,15 +39,15 @@ img {
   height: auto;
 }
 
+video {
+  display: block;
+  width: 100%;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .heading-primary {
   font-size: var(--heading-1);
   font-family: var(--second-font);
-}
-
-.heading-secondary {
-  font-size: var(--heading-2);
-  line-height: var(--heading-2-line-height);
 }
 
 .sub-heading {
@@ -80,4 +80,17 @@ img {
   border-radius: 8px;
   font-weight: var(--font-semi-bold);
   font-size: 1.6rem;
+}
+
+.english-title {
+  color: #6b7280;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--gray-800);
 }

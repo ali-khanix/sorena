@@ -1,0 +1,45 @@
+@media screen and (min-width: 1024px) {
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    position: static;
+    flex-direction: row;
+    column-gap: 3rem;
+    padding-right: 0;
+  }
+
+  .nav__list a {
+    font-size: 2rem;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 5rem;
+    padding-bottom: 0;
+    direction: ltr;
+  }
+  .hero__content {
+    direction: rtl;
+  }
+
+  .hero__content p {
+    margin-top: 2rem;
+    padding-right: 8rem !important;
+  }
+
+  .hero__cta-container {
+    max-width: 50%;
+    margin-right: 8rem;
+  }
+
+  .select-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+}

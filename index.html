@@ -18,6 +18,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
     />
 
+    <!--=============== SWIPER ===============-->
+    <link rel="stylesheet" href="assets/scss/swiper-bundle.min.css" />
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/scss/style.css" />
   </head>
@@ -97,16 +100,17 @@
               media="(max-width: 430px)"
             />
             <source
-              srcset="assets/images/hero/hero2.webp"
+              srcset="assets/images/hero/hero1.webp"
               media="(max-width: 744px)"
             />
             <source
-              srcset="assets/images/hero/hero3.webp"
+              srcset="assets/images/hero/hero1.webp"
               media="(max-width: 1150px)"
             />
-            <source srcset="assets/images/hero/hero2.webp" />
+            <source srcset="assets/images/hero/hero1.webp" />
 
             <img
+              class="hero__image"
               src="assets/images/hero/hero1.webp"
               alt="mobile"
               style="width: 100%"
@@ -121,9 +125,8 @@
             </h1>
 
             <p class="sub-heading">
-              ما به شما کمک میکنیم تا مکان های مناسب برای نصب بیلبوردهایتان
-              انتخاب کنید. تا بتوانید گذرندگان بیشتری را تحتِ تاثیر و جذبِ کسب و
-              کارِ خود کنید.
+              ما به شما مشاوره میدهیم با توجه به شغل و خدماتِ شما، مناسب ترین
+              فضاهایِ تبلیغاتی در بهترین لوکیشن ها را انتخاب کنید.
             </p>
 
             <div class="hero__cta-container">
@@ -142,55 +145,568 @@
 
       <!--=============== SELECT ===============-->
       <section class="section-select">
-        <form class="select">
-          <label class="select__title">انتخاب استان</label>
-          <select class="select__select-box">
-            <option value="ghazvin">قزوین</option>
-            <option value="tehran">تهران</option>
-            <option value="alborz">البرز</option>
-            <option value="ghom">قم</option>
-          </select>
+        <div class="select-container">
+          <form class="select">
+            <label class="select__title">انتخاب محور</label>
+            <select class="select__select-box">
+              <option value="ghazvin">قزوین</option>
+              <option value="tehran">جاجرود</option>
+              <option value="ghom">قم</option>
+              <option value="alborz">البرز</option>
+            </select>
 
-          <label class="select__subtitle"
-            >استانِ موردِ نظرتون رو انتخاب کنید</label
-          >
-        </form>
+            <label class="select__subtitle"
+              >استانِ موردِ نظرتون رو انتخاب کنید</label
+            >
+          </form>
 
-        <form class="select">
-          <label class="select__title">انتخابِ شهر</label>
-          <select class="select__select-box">
-            <option value="tehran">آبیک</option>
-            <option value="tehran">کرج</option>
-          </select>
+          <form class="select">
+            <label class="select__title">انتخابِ رسانه</label>
+            <select class="select__select-box">
+              <option value="tehran">بیلبورد</option>
+              <option value="alborz">عرشه پل</option>
+            </select>
 
-          <label class="select__subtitle"
-            >شهرِ موردِ نظرتون رو انتخاب کنید</label
-          >
-        </form>
+            <label class="select__subtitle"
+              >رسانه موردِ نظرتون رو انتخاب کنید</label
+            >
+          </form>
 
-        <form class="select">
-          <label class="select__title">انتخابِ رسانه</label>
-          <select class="select__select-box">
-            <option value="tehran">بیلبورد</option>
-            <option value="alborz">عرشه پل</option>
-          </select>
+          <a target="_blank" class="select_search-button">
+            جستجو <i class="ri-search-line"></i>
+          </a>
+        </div>
+      </section>
 
-          <label class="select__subtitle"
-            >رسانه موردِ نظرتون رو انتخاب کنید</label
-          >
-        </form>
+      <!--=============== TRUSTED COMPANIES ===============-->
+      <section class="section-companies">
+        <h3 class="heading-tertiary">مشتریانِ ما</h3>
+        <div class="companies">
+          <div class="companies__logo-slide">
+            <img
+              src="assets/images/logo/company logoes/Snap logo group.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Mr Farsh logo.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Filimo logo.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Shahr Farsh 1.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Deland logo.svg"
+              alt=""
+              class="company-logo"
+            />
 
-        <a target="_blank" class="select_search-button">
-          جستجو <i class="ri-search-line"></i>
-        </a>
+            <img
+              src="assets/images/logo/company logoes/Snap logo group.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Mr Farsh logo.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Filimo logo.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Shahr Farsh 1.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Deland logo.svg"
+              alt=""
+              class="company-logo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--=============== FEATURES ===============-->
+      <section class="section-features">
+        <div class="features">
+          <div class="features__headings">
+            <span class="english-title">?What Do We Do for You</span>
+            <h2 class="section-title">ما برایِ شما چه کار میکنیم؟</h2>
+          </div>
+
+          <div class="features__cards">
+            <div class="features__card">
+              <div class="features__card-icon--container">
+                <img
+                  class="features__card-img"
+                  src="assets/images/icons/Billbaord_Icon.svg"
+                />
+                <span class="icon-description">تبلیغات محیطی</span>
+              </div>
+              <div class="features__card-data">
+                <p class="description">
+                  کانونِ سورنا با 18 سال سابقه در خصوص تبلیغاتِ محیطی افتخار
+                  دارد خدماتِ ویژه ای را در خصوصِ تبلیغاتِ محیطی به مشتریانِ خود
+                  ارائه دهد.
+                </p>
+              </div>
+            </div>
+            <div class="features__card">
+              <div class="features__card-icon--container">
+                <img
+                  class="features__card-img"
+                  src="assets/images/icons/Billbaord_Icon.svg"
+                />
+                <span class="icon-description">محورهای مواصلاتی</span>
+              </div>
+              <div class="features__card-data">
+                <p class="description">
+                  کانونِ سورنا افتخار دارد 10 محور اصلی مواصلاتی کشور به صورت
+                  مستقیم خدمات ویژه به مشتریان ارائه دهد.
+                </p>
+              </div>
+            </div>
+            <div class="features__card">
+              <div class="features__card-icon--container">
+                <img
+                  class="features__card-img"
+                  src="assets/images/icons/Billbaord_Icon.svg"
+                />
+                <span class="icon-description">ارائه کمپین هایِ تبلیغاتی</span>
+              </div>
+              <div class="features__card-data">
+                <p class="description">
+                  با توجه به اینکه محورهای مواصلاتی تحتِ اختیارِ این کانون جزو
+                  محورهای اصلیِ کل کشور محسوب میشود، بهترین گزینه برای ارائه
+                  کمپین های تبلیغاتی به مشتریان میباشد.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== TESTIMONIALS ===============-->
+      <section class="section-testimonials">
+        <div class="testimonials">
+          <div class="testimonials__headings">
+            <span class="english-title">Testimonials</span>
+
+            <h2 class="section-title">مشتریانمان درباره مان چه میگویند؟</h2>
+          </div>
+
+          <div class="card__container swiper">
+            <div class="card__content">
+              <div class="swiper-wrapper">
+                <article class="testimonials__card swiper-slide">
+                  <img
+                    src="assets/images/icons/quote_icon.svg"
+                    alt="آیکونِ نقل و قول"
+                    class="testimonials__card-icon"
+                  />
+
+                  <p class="description">
+                    تبلیغات بیلبورد شما واقعاً جلب توجه ما را کسب کرد! طراحی
+                    جذاب و پیام مختصر به نحوی بود که ما را به خرید واقعاً ترغیب
+                    کرد.
+                  </p>
+
+                  <div class="testimonials__profile-info">
+                    <img
+                      src="assets/images/testimonial_user_profile_image.webp"
+                      alt="مشتریِ سورنا"
+                      class="testimonials__profile-img"
+                    />
+
+                    <div class="testimonials__profile-info--data">
+                      <span class="testimonials__profile-name"
+                        >محمد بختیاری</span
+                      >
+
+                      <span class="testimonials__profile-job">
+                        مدیرِ روابط عمومیِ شرکت ایوان
+                      </span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="testimonials__card swiper-slide">
+                  <img
+                    src="assets/images/icons/quote_icon.svg"
+                    alt="آیکونِ نقل و قول"
+                    class="testimonials__card-icon"
+                  />
+
+                  <p class="description">
+                    تبلیغات بیلبورد شما واقعاً جلب توجه ما را کسب کرد! طراحی
+                    جذاب و پیام مختصر به نحوی بود که ما را به خرید واقعاً ترغیب
+                    کرد.
+                  </p>
+
+                  <div class="testimonials__profile-info">
+                    <img
+                      src="assets/images/testimonial_user_profile_image.webp"
+                      alt="مشتریِ سورنا"
+                      class="testimonials__profile-img"
+                    />
+
+                    <div class="testimonials__profile-info--data">
+                      <span class="testimonials__profile-name"
+                        >محمد بختیاری</span
+                      >
+
+                      <span class="testimonials__profile-job">
+                        مدیرِ روابط عمومیِ شرکت ایوان
+                      </span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="testimonials__card swiper-slide">
+                  <img
+                    src="assets/images/icons/quote_icon.svg"
+                    alt="آیکونِ نقل و قول"
+                    class="testimonials__card-icon"
+                  />
+
+                  <p class="description">
+                    تبلیغات بیلبورد شما واقعاً جلب توجه ما را کسب کرد! طراحی
+                    جذاب و پیام مختصر به نحوی بود که ما را به خرید واقعاً ترغیب
+                    کرد.
+                  </p>
+
+                  <div class="testimonials__profile-info">
+                    <img
+                      src="assets/images/testimonial_user_profile_image.webp"
+                      alt="مشتریِ سورنا"
+                      class="testimonials__profile-img"
+                    />
+
+                    <div class="testimonials__profile-info--data">
+                      <span class="testimonials__profile-name"
+                        >محمد بختیاری</span
+                      >
+
+                      <span class="testimonials__profile-job">
+                        مدیرِ روابط عمومیِ شرکت ایوان
+                      </span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="testimonials__card swiper-slide">
+                  <img
+                    src="assets/images/icons/quote_icon.svg"
+                    alt="آیکونِ نقل و قول"
+                    class="testimonials__card-icon"
+                  />
+
+                  <p class="description">
+                    تبلیغات بیلبورد شما واقعاً جلب توجه ما را کسب کرد! طراحی
+                    جذاب و پیام مختصر به نحوی بود که ما را به خرید واقعاً ترغیب
+                    کرد.
+                  </p>
+
+                  <div class="testimonials__profile-info">
+                    <img
+                      src="assets/images/testimonial_user_profile_image.webp"
+                      alt="مشتریِ سورنا"
+                      class="testimonials__profile-img"
+                    />
+
+                    <div class="testimonials__profile-info--data">
+                      <span class="testimonials__profile-name"
+                        >محمد بختیاری</span
+                      >
+
+                      <span class="testimonials__profile-job">
+                        مدیرِ روابط عمومیِ شرکت ایوان
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== PRIMARY CTA ===============-->
+
+      <section class="section-primaryCTA">
+        <div class="primaryCTA">
+          <h2 class="section-title">آماده ای کارت رو بندازی رو سودِ بیشتر؟</h2>
+
+          <p class="description">
+            ما چــه می كنيم؟این سئوالیسـت كه به دفعات از ما ‌ پرسـیده می شـود ما
+            تحقیق می كنیم، ما می نویســـیم، ما ترســیم می كنیم، ما طراحی می
+            كنیم، ، ما می ســـازیم، ما برنــــامه ریزی می كنیم، ما صـــحبت می
+            كنیم و در نهایت ما در کنارِ شما به اهدافتان نزدیک میشویم.
+          </p>
+
+          <div class="hero__cta-container">
+            <a href="tel:+989126463968" class="button">
+              <span>حالا تماس بگیرید</span>
+
+              <img
+                style="display: inline"
+                src="assets/images/icons/calling phone icon.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== ABOUT US ===============-->
+      <section class="section-aboutUs">
+        <div class="aboutUs">
+          <div class="aboutUs__headings">
+            <span class="english-title">About Us</span>
+            <h2 class="section-title">درباره ما</h2>
+          </div>
+
+          <div class="aboutUs__data">
+            <div class="aboutUs__data-video--container">
+              <video
+                class="aboutUs__data-video"
+                src="assets/images/کلیپ و تیزر تبلیغاتی مجموعه سورنا مهر البرز.mp4"
+                controls
+                muted
+              ></video>
+            </div>
+
+            <div class="aboutUs__data-content">
+              <p class="description">
+                کانون تبلیغاتی سورنا مهر البرز (
+                <strong>خانه بیلبورد ایران</strong> ) با مجوز رسمی از وزارت
+                فرهنگ و ارشاد اسلامی که فعالیت خود را از سالِ 1385 انحصارا در
+                خصوصِ تبلیغاتِ محیطی با مدیریت عامل جنابِ آقای علیرضا قلیچ تاسیس
+                گردید.
+
+                <br />
+                این کانون با دارا بودنِ بیش از 5 هزار متر فضای تبلیغاتی که شاملِ
+                عرشه پل و بیلبوردهای تبلیغاتی در محور های مواصلاتی کل کشور
+                میباشد، آماده ی خدمات رسانی و ارائه کمپین های تبلیغاتی به شما
+                عزیزان میباشد.
+
+                <br />
+
+                از ابتدای پروژه، شما عزیزان با همکاریِ گروهِ مشاوره و طراحی این
+                مجموعه کارِ خود را آغاز میکنید و با توجه به نوعِ فعالیت و بازارِ
+                هدفِ شما، موقعیت های رسانه ها به شما معرفی و انتخاب میگردد و در
+                ادامه طرحِ تایید شده به مرحله چاپ رسیده و تیمِ نصب و راه اندازیِ
+                سورنا وارد عمل شده و پروژه اجرا میشود.ما صفر تا صدِ پروژه در
+                کنارِ شما عزیزان، شما را همراهی میکنیم
+              </p>
+
+              <div class="hero__cta-container">
+                <a href="#" class="button">
+                  <span>بیشتر درباره ما بدانید</span>
+                  <img
+                    style="display: inline"
+                    src="assets/images/icons/About.svg"
+                    alt="آیکون درباره ما"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="aboutUs__carousel">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="aboutUs__carousel-image swiper-slide">
+                  <img src="assets/images/about us/aboutUs1.webp" alt="" />
+                </div>
+                <div class="aboutUs__carousel-image swiper-slide">
+                  <img src="assets/images/about us/aboutUs2.webp" alt="" />
+                </div>
+                <div class="aboutUs__carousel-image swiper-slide">
+                  <img src="assets/images/about us/aboutUs3.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== WHY CHOOSE US ===============-->
+      <section class="section-why-choose-us">
+        <div class="why-choose-us">
+          <div class="why-choose-us__headings">
+            <span class="english-title">Why Choose Us</span>
+            <h2 class="section-title">چرا مارا انتخاب کنید؟</h2>
+          </div>
+          <div class="why-choose-us__content">
+            <p class="description">
+              غالبا دغدغه ی عمومِ کارفرمایان و صاحبانِ کسب و کار در خصوصِ فروش،
+              بازاریابی و جذب مشتری میباشد. با توجه به اینکه نوسانِ بازار و
+              تلاطم موج های ناهموار اقتصادیِ کشور، اجازه ی برنامه ریزی های
+              طولانی مدت را برای رسیدن به اهدافِ بلند مدت نمیدهد، ما با در نظر
+              گرفتن تمامیِ این مسائل راهی را به شما پیشنهاد میدهیم که نه در دراز
+              مدت، در کوتاه مدت بتوانید به نتیجه ی مطلوب دست پیدا کنید. <br />
+              <br />
+
+              اول اینکه هیچ تضمینی در بازدهیِ تبلیغات وجود ندارد. زیرا بازدهی و
+              گرفتنِ نتیجه منوط به چند گزینه میباشد. نوعِ محصول، کیفیتِ محصول،
+              بازارِ فروشِ محصول، خدماتِ پس از فروش، نیازِ بازارِ به محصول و در
+              نهایت تبلیغات محصول میباشد. <br />
+              <br />
+
+              چنانچه کلیه ی موارد مذکور بررسی و نتیجه ی مثبتِ بالایِ 50 درصد
+              گرفته باشد در این صورت تبلیغات شلیک نهایی خواهد بود برای موفقیتِ
+              محصولِ شما <br />
+              <br />
+
+              در اینجاست که ما واردِ عمل میشویم و بهترین و کارآمدترین نوعِ
+              تبلیغات را در خصوصِ محصول و خدماتِ شما ارائه میدهیم. شما ما را
+              انتخاب میکنید، زیرا که ما با شما صادق هستیم...
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== SECOND CTA ===============-->
+      <section class="section-second-cta">
+        <div class="second-cta">
+          <div class="second-cta__image-container">
+            <img
+              class="second-cta__image"
+              style="width: 100%"
+              src="assets/images/second_cta_image_mobile.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="second-cta__content">
+            <div class="second-cta__content-blur"></div>
+            <h2 class="section-title">این میتونه بیلبوردِ شما باشه</h2>
+
+            <p class="description">
+              ما چــه می كنيم؟این سئوالیسـت كه به دفعات از ما پرسـیده می شـود ما
+              تحقیق می كنیم، ما می نویســـیم، ما ترســیم می كنیم
+            </p>
+
+            <div class="hero__cta-container">
+              <a href="tel:+989126463968" class="button">
+                <span>حالا تماس بگیرید</span>
+
+                <img
+                  style="display: inline"
+                  src="assets/images/icons/calling phone icon.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== OUR SERVICES ===============-->
+      <section class="section-our-services">
+        <div class="our-services">
+          <div class="our-services__headings">
+            <span class="english-title">Why Choose Us</span>
+            <h2 class="section-title">چرا مارا انتخاب کنید؟</h2>
+          </div>
+
+          <div class="our-services__data">
+            <div class="our-services__cards">
+              <div class="our-services__card">
+                <div class="our-services__card-content">
+                  <!-- <i class="ri-mail-volume-line"></i> -->
+                  <img
+                    src="assets/images/icons/our_services/campaign_icon.svg"
+                    alt=""
+                  />
+                  <span>Campaign Writing</span>
+                  <h3>کمپین نویسی</h3>
+                </div>
+              </div>
+
+              <div class="our-services__card">
+                <div class="our-services__card-content">
+                  <!-- <i class="ri-mail-volume-line"></i> -->
+                  <img
+                    src="assets/images/icons/our_services/billboard_icon.svg"
+                    alt=""
+                  />
+                  <span>Enviromental Advertising</span>
+                  <h3>تبلیغات محیطی</h3>
+                </div>
+              </div>
+
+              <div class="our-services__card">
+                <div class="our-services__card-content">
+                  <!-- <i class="ri-mail-volume-line"></i> -->
+                  <img
+                    src="assets/images/icons/our_services/business_coaching_icon.svg"
+                    alt=""
+                  />
+                  <span>Business Coaching</span>
+                  <h3>کوچینگِ کسب و کار</h3>
+                </div>
+              </div>
+
+              <div class="our-services__card">
+                <div class="our-services__card-content">
+                  <!-- <i class="ri-mail-volume-line"></i> -->
+                  <img
+                    src="assets/images/icons/our_services/fountain_pen.svg"
+                    alt=""
+                  />
+                  <span>Design & Brand Identity</span>
+                  <h3>طراحی و هویت برند</h3>
+                </div>
+              </div>
+
+              <div class="our-services__card">
+                <div class="our-services__card-content">
+                  <!-- <i class="ri-mail-volume-line"></i> -->
+                  <img
+                    src="assets/images/icons/our_services/photography_icon.svg"
+                    alt=""
+                  />
+                  <span>Photography & Filming</span>
+                  <h3>عکاسی و فیلمبرداری</h3>
+                </div>
+              </div>
+
+              <div class="our-services__card">
+                <div class="our-services__card-content">
+                  <!-- <i class="ri-mail-volume-line"></i> -->
+                  <img
+                    src="assets/images/icons/our_services/digital_marketing_icon.svg"
+                    alt=""
+                  />
+                  <span>Digital Marketing</span>
+                  <h3>دیجیتال مارکتینگ</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
-
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN SCRIPT ===============-->
     <script src="assets/js/script.js"></script>
