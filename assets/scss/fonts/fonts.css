@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Roboto:wght@300&display=swap");
+
+@font-face {
+  font-family: "Iran Yekan";
+  font-style: normal;
+  font-weight: 400;
+  src: url("iran_yekan/Woff/IRANYekanXFaNum-Regular.woff") format("woff"),
+    url("iran_yekan/Woff2/IRANYekanXFaNum-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Iran Yekan";
+  font-style: normal;
+  font-weight: 500;
+  src: url("iran_yekan/Woff/IRANYekanXFaNum-Medium.woff") format("woff"),
+    url("iran_yekan/Woff2/IRANYekanXFaNum-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Iran Yekan";
+  font-style: normal;
+  font-weight: 600;
+  src: url("iran_yekan/Woff/IRANYekanXFaNum-DemiBold.woff") format("woff"),
+    url("iran_yekan/Woff2/IRANYekanXFaNum-DemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Iran Yekan";
+  font-style: normal;
+  font-weight: 700;
+  src: url("iran_yekan/Woff/IRANYekanXFaNum-Bold.woff") format("woff"),
+    url("iran_yekan/Woff2/IRANYekanXFaNum-Bold.woff2") format("woff2");
+}

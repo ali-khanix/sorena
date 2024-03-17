@@ -12,6 +12,9 @@
       type="image/x-icon"
     />
 
+    <!-- FONT CSS LINK -->
+    <link rel="stylesheet" href="assets/scss/fonts/fonts.css" />
+
     <!--=============== REMIXICON ===============-->
     <link
       rel="stylesheet"
@@ -36,7 +39,12 @@
           />
         </div>
 
-        <a href="https://sorenairan.com" target="_blank" class="nav__logo">
+        <a
+          id="nav-logo"
+          href="https://sorenairan.com"
+          target="_blank"
+          class="nav__logo"
+        >
           <img
             class="nav__logo-img"
             src="assets/images/logo/لوگو سورنا با حروفِ فارسی.svg"
@@ -47,23 +55,23 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">خانه</a>
+              <a href="/index.html" class="nav__link">خانه</a>
             </li>
 
             <li class="nav__item">
-              <a href="#" class="nav__link">خدمات</a>
+              <a href="pages/لیست-بیلبوردها.html" class="nav__link">رسانه ها</a>
             </li>
 
             <li class="nav__item">
-              <a href="#" class="nav__link">بیلبوردها</a>
+              <a href="pages/خدمات-ما.html" class="nav__link">خدمات</a>
             </li>
 
             <li class="nav__item">
-              <a href="#" class="nav__link">تماس با ما</a>
+              <a href="pages/تماس-با-ما.html" class="nav__link">تماس با ما</a>
             </li>
 
             <li class="nav__item">
-              <a href="#" class="nav__link">درباره ما</a>
+              <a href="pages/تماس-با-ما.html" class="nav__link">درباره ما</a>
             </li>
           </ul>
 
@@ -79,11 +87,15 @@
             target="_blank"
             class="cta"
           >
-            <img
-              class="nav__cta-svg"
-              src="assets/images/icons/catalogue button/icon1.svg"
-              alt=""
-            />
+            <div class="nav__download-icon-container">
+              <img
+                class="nav__cta-svg"
+                src="assets/images/icons/catalogue button/icon1.svg"
+                alt=""
+              />
+
+              <span>دانلودِ کاتالوگ</span>
+            </div>
           </a>
         </div>
       </nav>
@@ -121,7 +133,7 @@
             <h1 class="heading-primary">
               خانه بیلبورد
               <br />
-              <span class="heading-primary">برای معرفیِ برندِ شما</span>
+              <p class="heading-primary-sub">برای معرفیِ برندِ شما</p>
             </h1>
 
             <p class="sub-heading">
@@ -129,22 +141,18 @@
               فضاهایِ تبلیغاتی در بهترین لوکیشن ها را انتخاب کنید.
             </p>
 
-            <div class="hero__cta-container">
-              <a href="tel:+989126463968" class="button"
-                >حالا تماس بگیرید
-                <img
-                  style="display: inline"
-                  src="assets/images/icons/calling phone icon.svg"
-                  alt=""
-                />
-              </a>
-            </div>
+            <a class="btn btn-primary" href="tel:+989126463968">
+              <div class="btn-content">
+                <span>همین حالا تماس بگیرید</span>
+                <img src="assets/images/icons/calling phone icon.svg" alt="" />
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
       <!--=============== SELECT ===============-->
-      <section class="section-select">
+      <section class="section-select container">
         <div class="select-container">
           <form class="select">
             <label class="select__title">انتخاب محور</label>
@@ -234,13 +242,65 @@
               alt=""
               class="company-logo"
             />
+
+            <img
+              src="assets/images/logo/company logoes/Snap logo group.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Mr Farsh logo.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Filimo logo.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Shahr Farsh 1.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Deland logo.svg"
+              alt=""
+              class="company-logo"
+            />
+
+            <img
+              src="assets/images/logo/company logoes/Snap logo group.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Mr Farsh logo.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Filimo logo.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Shahr Farsh 1.svg"
+              alt=""
+              class="company-logo"
+            />
+            <img
+              src="assets/images/logo/company logoes/Deland logo.svg"
+              alt=""
+              class="company-logo"
+            />
           </div>
         </div>
       </section>
 
       <!--=============== FEATURES ===============-->
-      <section class="section-features">
-        <div class="features">
+      <section class="section-features container">
+        <div class="features container">
           <div class="features__headings">
             <span class="english-title">?What Do We Do for You</span>
             <h2 class="section-title">ما برایِ شما چه کار میکنیم؟</h2>
@@ -257,17 +317,17 @@
               </div>
               <div class="features__card-data">
                 <p class="description">
-                  کانونِ سورنا با 18 سال سابقه در خصوص تبلیغاتِ محیطی افتخار
-                  دارد خدماتِ ویژه ای را در خصوصِ تبلیغاتِ محیطی به مشتریانِ خود
-                  ارائه دهد.
+                  با کانون سورنا مهرِ البرز، شما خدماتِ حرفه ای، با کیفیت و قابل
+                  پرداختی را تجربه میکنید.
                 </p>
               </div>
             </div>
+
             <div class="features__card">
               <div class="features__card-icon--container">
                 <img
                   class="features__card-img"
-                  src="assets/images/icons/Billbaord_Icon.svg"
+                  src="assets/images/icons/road.svg"
                 />
                 <span class="icon-description">محورهای مواصلاتی</span>
               </div>
@@ -282,7 +342,7 @@
               <div class="features__card-icon--container">
                 <img
                   class="features__card-img"
-                  src="assets/images/icons/Billbaord_Icon.svg"
+                  src="assets/images/icons/Campaign_Icon.svg"
                 />
                 <span class="icon-description">ارائه کمپین هایِ تبلیغاتی</span>
               </div>
@@ -300,7 +360,7 @@
 
       <!--=============== TESTIMONIALS ===============-->
       <section class="section-testimonials">
-        <div class="testimonials">
+        <div class="testimonials container">
           <div class="testimonials__headings">
             <span class="english-title">Testimonials</span>
 
@@ -350,9 +410,8 @@
                   />
 
                   <p class="description">
-                    تبلیغات بیلبورد شما واقعاً جلب توجه ما را کسب کرد! طراحی
-                    جذاب و پیام مختصر به نحوی بود که ما را به خرید واقعاً ترغیب
-                    کرد.
+                    قیمت خدمات شرکت سورنا در مقایسه با سایر شرکت‌های فعال در این
+                    زمینه بسیار مناسب و مقرون به صرفه است.
                   </p>
 
                   <div class="testimonials__profile-info">
@@ -364,11 +423,11 @@
 
                     <div class="testimonials__profile-info--data">
                       <span class="testimonials__profile-name"
-                        >محمد بختیاری</span
+                        >علیرضا رشیدنیا</span
                       >
 
                       <span class="testimonials__profile-job">
-                        مدیرِ روابط عمومیِ شرکت ایوان
+                        نماینده فروشِ آجر نما چین
                       </span>
                     </div>
                   </div>
@@ -442,6 +501,8 @@
 
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -449,7 +510,7 @@
       <!--=============== PRIMARY CTA ===============-->
 
       <section class="section-primaryCTA">
-        <div class="primaryCTA">
+        <div class="primaryCTA container">
           <h2 class="section-title">آماده ای کارت رو بندازی رو سودِ بیشتر؟</h2>
 
           <p class="description">
@@ -459,23 +520,18 @@
             كنیم و در نهایت ما در کنارِ شما به اهدافتان نزدیک میشویم.
           </p>
 
-          <div class="hero__cta-container">
-            <a href="tel:+989126463968" class="button">
-              <span>حالا تماس بگیرید</span>
-
-              <img
-                style="display: inline"
-                src="assets/images/icons/calling phone icon.svg"
-                alt=""
-              />
-            </a>
-          </div>
+          <a class="btn btn-primary" href="tel:+989126463968">
+            <div class="btn-content">
+              <span>همین حالا تماس بگیرید</span>
+              <img src="assets/images/icons/calling phone icon.svg" alt="" />
+            </div>
+          </a>
         </div>
       </section>
 
       <!--=============== ABOUT US ===============-->
       <section class="section-aboutUs">
-        <div class="aboutUs">
+        <div class="aboutUs container">
           <div class="aboutUs__headings">
             <span class="english-title">About Us</span>
             <h2 class="section-title">درباره ما</h2>
@@ -514,17 +570,6 @@
                 سورنا وارد عمل شده و پروژه اجرا میشود.ما صفر تا صدِ پروژه در
                 کنارِ شما عزیزان، شما را همراهی میکنیم
               </p>
-
-              <div class="hero__cta-container">
-                <a href="#" class="button">
-                  <span>بیشتر درباره ما بدانید</span>
-                  <img
-                    style="display: inline"
-                    src="assets/images/icons/About.svg"
-                    alt="آیکون درباره ما"
-                  />
-                </a>
-              </div>
             </div>
           </div>
 
@@ -548,7 +593,7 @@
 
       <!--=============== WHY CHOOSE US ===============-->
       <section class="section-why-choose-us">
-        <div class="why-choose-us">
+        <div class="why-choose-us container">
           <div class="why-choose-us__headings">
             <span class="english-title">Why Choose Us</span>
             <h2 class="section-title">چرا مارا انتخاب کنید؟</h2>
@@ -586,12 +631,25 @@
       <section class="section-second-cta">
         <div class="second-cta">
           <div class="second-cta__image-container">
-            <img
-              class="second-cta__image"
-              style="width: 100%"
-              src="assets/images/second_cta_image_mobile.webp"
-              alt=""
-            />
+            <picture class="hero__image-container">
+              <source
+                srcset="assets/images/second_cta_image_mobile.webp"
+                media="(max-width: 744px)"
+              />
+              <source
+                srcset="assets/images/second_cta_image_desktop.webp"
+                media="(max-width: 1440px)"
+              />
+
+              <source srcset="assets/images/second_cta_image_desktop.webp" />
+
+              <img
+                class="second-cta__image"
+                style="width: 100%"
+                src="assets/images/second_cta_image_mobile.webp"
+                alt=""
+              />
+            </picture>
           </div>
 
           <div class="second-cta__content">
@@ -603,24 +661,19 @@
               تحقیق می كنیم، ما می نویســـیم، ما ترســیم می كنیم
             </p>
 
-            <div class="hero__cta-container">
-              <a href="tel:+989126463968" class="button">
-                <span>حالا تماس بگیرید</span>
-
-                <img
-                  style="display: inline"
-                  src="assets/images/icons/calling phone icon.svg"
-                  alt=""
-                />
-              </a>
-            </div>
+            <a class="btn btn-primary" href="tel:+989126463968">
+              <div class="btn-content">
+                <span>همین حالا تماس بگیرید</span>
+                <img src="assets/images/icons/calling phone icon.svg" alt="" />
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
       <!--=============== OUR SERVICES ===============-->
       <section class="section-our-services">
-        <div class="our-services">
+        <div class="our-services container">
           <div class="our-services__headings">
             <span class="english-title">Why Choose Us</span>
             <h2 class="section-title">چرا مارا انتخاب کنید؟</h2>
@@ -703,10 +756,102 @@
           </div>
         </div>
       </section>
+      <!--=============== WEB DESIGN ===============-->
+      <section class="section-web-design">
+        <div class="web-design">
+          <div class="web-design__headings">
+            <span class="english-title">Web Design Services</span>
+            <h2 class="section-title">خدماتِ طراحیِ سایت</h2>
+          </div>
+
+          <div class="web-design__cards">
+            <div class="web-design__card">
+              <div class="web-design__image-content">
+                <img
+                  src="assets/images/ui_ux_image.png"
+                  alt="طراحی رابطِ کاربری و تجربه کاربری"
+                  class="web-design__image"
+                />
+              </div>
+              <div class="web-design__card-content">
+                <h3 class="web-design__card-heading">
+                  طراحیِ رابطِ کاربری و تجربه کاربری
+                  <br />
+                  UI/UX
+                </h3>
+
+                <p class="description">
+                  ما به شما مشاوره میدهیم با توجه به شغل و خدماتِ شما، مناسب
+                  ترین فضاهایِ تبلیغاتی در بهترین لوکیشن ها را انتخاب کنید.
+                </p>
+
+                <a class="btn btn-outline" href="#">
+                  <span>همین حالا تماس بگیرید</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="web-design__card">
+              <div class="web-design__image-content">
+                <img
+                  src="assets/images/SEO.png"
+                  alt="طراحی رابطِ کاربری و تجربه کاربری"
+                  class="web-design__image"
+                />
+              </div>
+              <div class="web-design__card-content">
+                <h3 class="web-design__card-heading">
+                  محتوا نویسی بر پایه سئو
+                </h3>
+
+                <p class="description">
+                  رتبه گوگلتون رو سوپرشارژ کنید با خدمات محتوا نویسی بر پایه سئو
+                  سورنا. مشتریانِ بیشتری جذب کنید. با کلماتِ کلیدی که رقابتِ
+                  زیادی دارند خداحافظی کنید.
+                  <strong>
+                    همین امروز شروع کنید به تولید محتوا بر پایه سئو
+                  </strong>
+                </p>
+
+                <a class="btn btn-outline" href="#">
+                  <span>همین حالا تماس بگیرید</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="web-design__card">
+              <div class="web-design__image-content">
+                <img
+                  src="assets/images/Developing.png"
+                  alt="طراحی رابطِ کاربری و تجربه کاربری"
+                  class="web-design__image"
+                />
+              </div>
+              <div class="web-design__card-content">
+                <h3 class="web-design__card-heading">
+                  طراحیِ رابطِ کاربری و تجربه کاربری
+                  <br />
+                  UI/UX
+                </h3>
+
+                <p class="description">
+                  ما به شما مشاوره میدهیم با توجه به شغل و خدماتِ شما، مناسب
+                  ترین فضاهایِ تبلیغاتی در بهترین لوکیشن ها را انتخاب کنید.
+                </p>
+
+                <a class="btn btn-outline" href="#">
+                  <span>همین حالا تماس بگیرید</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
 
     <!--=============== MAIN SCRIPT ===============-->
     <script src="assets/js/script.js"></script>

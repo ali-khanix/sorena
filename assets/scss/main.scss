@@ -1,13 +1,13 @@
 @import "abstracts/variables";
 
-@import "base/base", "base/fonts", "base/helpers", "base/typography";
+@import "base/base", "base/helpers", "base/typography";
 
 @import "components/button";
 
 @import "layout/footer";
 @import "layout/header";
 
-@import "pages/home";
+@import "pages/home", "pages/media-list";
 @import "themes/default";
 
 @import "vendors/normalize", "vendors/mediaQuery";

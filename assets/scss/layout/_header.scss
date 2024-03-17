@@ -21,6 +21,19 @@
   background-color: var(--gray-50);
 }
 
+.nav__download-icon-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__download-icon-container span {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 1023px) {
   .nav__menu {
     position: fixed;

@@ -15,14 +15,10 @@ body {
   direction: rtl;
 }
 
+a,
 body,
 button {
   font-family: var(--body-font);
-}
-
-button {
-  border: none;
-  outline: none;
 }
 
 ul {
@@ -60,8 +56,8 @@ video {
 }
 
 .container {
-  max-width: 1120px;
-  margin-inline: 3rem;
+  max-width: 75%;
+  margin-inline: auto;
 }
 
 .grid {
@@ -73,16 +69,8 @@ video {
   display: flex;
 }
 
-.button {
-  padding: 1.6rem 3rem;
-  background-color: var(--color-button);
-  color: var(--gray-200);
-  border-radius: 8px;
-  font-weight: var(--font-semi-bold);
-  font-size: 1.6rem;
-}
-
 .english-title {
+  font-family: "Roboto", sans-serif;
   color: #6b7280;
   font-size: 1.8rem;
   font-weight: 300;
@@ -93,4 +81,17 @@ video {
   font-weight: 700;
   line-height: 1.4;
   color: var(--gray-800);
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--gray-200);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-button-hover);
+  border-radius: 1rem;
 }
